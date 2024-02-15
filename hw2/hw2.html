@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        gap: 20px;
+      }
+      .circle {
+        background-color: rgb(0, 140, 255);
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+      }
+      .circle:hover {
+        background-color: rgb(0, 60, 255);
+      }
+      .circle-active {
+        background-color: rgb(255, 0, 234);
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .img-box {
+        position: relative;
+        height: 500px;
+      }
+      .img {
+        height: 100%;
+      }
+      .box {
+        position: absolute;
+        bottom: 10px;
+        left: calc(50% - 50px);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+      }
+      .prev,
+      .next {
+        height: 20px;
+        background-color: transparent;
+        color: #fff;
+      }
+      .prev:hover,
+      .next:hover {
+        cursor: pointer;
+        color: rgb(80, 22, 216);
+      }
+      .prev:active,
+      .next:active {
+        cursor: pointer;
+        color: gray;
+      }
+      .button-box {
+        position: absolute;
+        padding: 20px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+        top: calc(50% - 30px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <figcaption class="img-box">
+        <img
+          class="img"
+          src="https://img.freepik.com/free-photo/mountains-lake_1398-1150.jpg?w=740&t=st=1707999558~exp=1708000158~hmac=d0f4f3edc35958ffb5aec246efd4ddae295d2155bef8d2e4dfdac3a6235be93b"
+          alt="#"
+        />
+        <div class="box flex">
+          <span class="circle circle-active"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+        <div class="button-box">
+          <p class="prev">PREV</p>
+          <p class="next">NEXT</p>
+        </div>
+      </figcaption>
+    </div>
+    <script src="hw2.js"></script>
+  </body>
+</html>
